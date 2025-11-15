@@ -34,7 +34,7 @@ mkt = (lambda x: 0 if x=='Offline' else 1 )(st.selectbox('How Booking has been M
 
 lt = st.number_input('How many Days Prior the Booking was Made',min_value=0)
 price = st.number_input('What is the Average Price Per Room',min_value=0)
-adults = price = st.number_input('How Many Adult Members in Booking',min_value=0)
+adults = st.number_input('How Many Adult Members in Booking',min_value=0)
 spcl = st.selectbox('Select the Number of Special Request Made',[0,1,2,3,4,5])
 park = (lambda x: 0 if x=='No'else 1)(st.selectbox('Does Guest Need Parking Space',['Yes','No']))
 
