@@ -47,7 +47,7 @@ input_list = [lt_t,spcl,price_t,adults,wkend,park,wk,mkt,amnth,awkd,totn,dwkd]
 
 # Make prediction 
 
-prediction  = model.predict_proba[input_list][:,1][0]
+prediction = model.predict_proba([input_list])[:, 1][0]
 
 # Lets Show the Probability 
 if st.button ('Predict'):
